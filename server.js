@@ -11,3 +11,6 @@ bot.hears('Oe bot', (ctx) => ctx.reply('Que quieres cabeza de cebolla, te vas a 
 bot.command('furry', (ctx) => ctx.reply('Unknown api: Have you considered commiting suicide?'));
 bot.command('porno', (ctx) => ctx.reply('Unknown api: Have you considered commiting suicide?'));
 bot.launch();
+
+process.once('SIGINT', () => bot.stop('SIGINT'))
+process.once('SIGTERM', () => bot.stop('SIGTERM'))
