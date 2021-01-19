@@ -4,7 +4,7 @@
   "description": "Bot hecho por 6 estudiantes sin animos de seguir viviendo, queriendo hacer bots pero sin las ganas para terminarlo.",
   "main": "server.js",
   "scripts": {
-    "test": "",
+    "test": "mocha 'tests/**/*.js' --recursive",
     "start": "nodemon server.js"
   },
   "repository": {
