@@ -34,6 +34,8 @@ bot.on('video_note', (ctx) => {
 
 bot.command('pri', (ctx) => ctx.reply('pri'));
 
+bot.command('pra', (ctx) => ctx.reply('pra'));
+
 bot.launch();
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
