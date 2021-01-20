@@ -27,6 +27,11 @@ bot.command('porno', (ctx) => {
   ctx.reply('Unknown api: Have you considered commiting suicide?');
 });
 
+bot.on('video_note', (ctx) => {
+  console.log(`Saw a video note from ${ctx.from.username}`);
+  ctx.reply('Cule pelao maluco');
+});
+
 bot.launch();
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
