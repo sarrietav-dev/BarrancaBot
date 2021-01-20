@@ -32,6 +32,8 @@ bot.on('video_note', (ctx) => {
   ctx.reply('Cule pelao maluco');
 });
 
+bot.command('pri', (ctx) => ctx.reply('pri'));
+
 bot.launch();
 
 process.once('SIGINT', () => bot.stop('SIGINT'));
